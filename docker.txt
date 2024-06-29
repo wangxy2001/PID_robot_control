@@ -1,0 +1,146 @@
+C:\Windows\System32>bash
+wangxy@DESKTOP-EHDF3BG:/mnt/c/Windows/System32$ (后略)sudo su
+service docker start
+cd /mnt/d/post-graduate/robot-arm-control/project/myproject/PID_robot_control/
+pipreqs ./ --encoding=utf8  --force（python terminal）
+docker build -t pid . # docker build -t imagename Dockerfilepath
+docker run --name="qwq"  pid 或docker run pid
+
+docker exec -it qwq sh -c 'echo 123 > /proc/1/fd/1'
+docker pull nginx:latest
+docker run --name ng -dp 8080:80 nginx:latest
+>ab2970809f172fc42241c16a90bf2ff165c875fcb7905f77d9bf827b15e24ff4
+docker stop ab2970809f172fc42241c16a90bf2ff165c875fcb7905f77d9bf827b15e24ff4
+wsl –shutdown
+
+cd /mnt/d/post-graduate/robot-arm-control/project/test/docker-image-coppeliasim
+-master
+查找linux系统是否有库pip list | grep -i库名
+
+docker logs -f -t
+docker ps -a -q #查有什么容器
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+docker run -d -p 8080:8080 --name webtomcat -v /home/docker/server/dockerproject:/usr/local/tomcat/apache-tomcat-9.0.36/webapps -v /home/docker/server/dockerprojectfile:/home/www/file --restart=always webtomcat9
+docker logs webtomcat
+
+
+找不到下载源的库
+cloud-init==23.1.2 有24.0的
+command-not-found==0.3 有
+distro-info===0.23ubuntu1 有
+language-selector==0.1 有
+PyGObject==3.36.0 # Failed building wheel for pycairo无
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple PyGObject==3.36.0
+python-apt==2.0.1+ubuntu0.20.4.1
+python-debian===0.1.36ubuntu1
+sos==4.4
+systemd-python==234
+ubuntu-advantage-tools==8001
+ufw==0.36
+unattended-upgrades==0.1
+zope.interface==4.7.1
+
+pip list
+attrs                  19.3.0
+Automat                0.8.0
+blinker                1.4
+certifi                2019.11.28
+chardet                3.0.4
+Click                  7.0
+cloud-init             24.1.3
+colorama               0.4.3
+command-not-found      0.3
+configobj              5.0.6
+constantly             15.1.0
+cryptography           2.8
+dbus-python            1.2.16
+distro                 1.4.0
+distro-info            0.23ubuntu1
+entrypoints            0.3
+httplib2               0.14.0
+hyperlink              19.0.0
+idna                   2.8
+importlib-metadata     1.5.0
+incremental            16.10.1
+Jinja2                 2.10.1
+jsonpatch              1.22
+jsonpointer            2.0
+jsonschema             3.2.0
+keyring                18.0.1
+language-selector      0.1
+launchpadlib           1.10.13
+lazr.restfulclient     0.14.2
+lazr.uri               1.0.3
+Mako                   1.1.0
+Markdown               3.1.1
+MarkupSafe             1.1.0
+more-itertools         4.2.0
+netifaces              0.10.4
+oauthlib               3.1.0
+packaging              20.3
+pbr                    6.0.0
+pexpect                4.6.0
+pip                    24.0
+pyasn1                 0.4.2
+pyasn1-modules         0.2.1
+Pygments               2.3.1
+PyGObject              3.36.0
+PyHamcrest             1.9.0
+PyJWT                  1.7.1
+pymacaroons            0.13.0
+PyNaCl                 1.3.0
+pyOpenSSL              19.0.0
+pyparsing              2.4.6
+pyrsistent             0.15.5
+pyserial               3.4
+python-apt             2.0.1+ubuntu0.20.4.1
+python-debian          0.1.36ubuntu1
+PyYAML                 5.3.1
+requests               2.22.0
+requests-unixsocket    0.2.0
+SecretStorage          2.3.1
+service-identity       18.1.0
+setuptools             45.2.0
+simplejson             3.16.0
+six                    1.14.0
+sos                    4.4
+ssh-import-id          5.10
+systemd-python         234
+testresources          2.0.1
+Twisted                18.9.0
+ubuntu-advantage-tools 8001
+ufw                    0.36
+unattended-upgrades    0.1
+urllib3                1.25.8
+wadllib                1.3.3
+wheel                  0.34.2
+zipp                   1.0.0
+zope.interface         4.7.1
+
+
+wsl --unregister Ubuntu-20.04
+tail -n 50 /var/log/messages
+
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.079800] docker0: port 1(veth1c2f42a) entered blocking state
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.081740] docker0: port 1(veth1c2f42a) entered disabled state
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.083223] device veth1c2f42a entered promiscuous mode
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.084368] docker0: port 1(veth1c2f42a) entered blocking state
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.085647] docker0: port 1(veth1c2f42a) entered forwarding state
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.087748] docker0: port 1(veth1c2f42a) entered disabled state
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.256216] eth0: renamed from veth250c286
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.286298] IPv6: ADDRCONF(NETDEV_CHANGE): veth1c2f42a: link becomes ready
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.287559] docker0: port 1(veth1c2f42a) entered blocking state
+May 10 19:58:20 DESKTOP-EHDF3BG kernel: [  382.288418] docker0: port 1(veth1c2f42a) entered forwarding state
+
+May 10 20:22:55 DESKTOP-EHDF3BG kernel: [ 1857.767410] docker0: port 1(vethe56e460) entered blocking state
+May 10 20:22:55 DESKTOP-EHDF3BG kernel: [ 1857.768940] docker0: port 1(vethe56e460) entered disabled state
+May 10 20:22:55 DESKTOP-EHDF3BG kernel: [ 1857.770713] device vethe56e460 entered promiscuous mode
+May 10 20:22:55 DESKTOP-EHDF3BG kernel: [ 1857.772114] docker0: port 1(vethe56e460) entered blocking state
+May 10 20:22:55 DESKTOP-EHDF3BG kernel: [ 1857.773895] docker0: port 1(vethe56e460) entered forwarding state
+May 10 20:22:55 DESKTOP-EHDF3BG kernel: [ 1857.775353] docker0: port 1(vethe56e460) entered disabled state
+May 10 20:22:56 DESKTOP-EHDF3BG kernel: [ 1857.975778] eth0: renamed from veth5ca58a9
+May 10 20:22:56 DESKTOP-EHDF3BG kernel: [ 1858.026174] IPv6: ADDRCONF(NETDEV_CHANGE): vethe56e460: link becomes ready
+May 10 20:22:56 DESKTOP-EHDF3BG kernel: [ 1858.028080] docker0: port 1(vethe56e460) entered blocking state
+May 10 20:22:56 DESKTOP-EHDF3BG kernel: [ 1858.028964] docker0: port 1(vethe56e460) entered forwarding state
